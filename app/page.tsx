@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col ml-3 mt-3">
-      <h1>Daniel Van Allen</h1>
+    <main className="flex min-h-screen flex-col ml-3">
+      <h1 className="mt-3">Daniel Van Allen</h1>
       Owner, Daniel Van Allen LLC
       <h2 className="mt-3">Contact</h2>
       <span>
