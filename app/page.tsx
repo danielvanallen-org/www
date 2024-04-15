@@ -14,11 +14,16 @@ export default function Home() {
       </span>
       <span>
         LinkedIn:&nbsp;
-        <a href="https://www.linkedin.com/in/danvanallen">https://www.linkedin.com/in/danvanallen</a>
+        <a href="https://www.linkedin.com/in/danvanallen">linkedin.com/in/danvanallen</a>
       </span>
       <span>
         GitHub:&nbsp;
-        <a href="https://github.com/dvanallen">https://github.com/dvanallen</a>
+        <a href="https://github.com/dvanallen">github.com/dvanallen</a>
+      </span>
+      <span>
+        Resume:&nbsp;
+        <a href="/resume.pdf">danielvanallen.org/resume.pdf</a>&nbsp;
+        (<a href="/resume.docx">docx</a>)
       </span>
     </main>
   );
