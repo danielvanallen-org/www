@@ -29,7 +29,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="m-auto max-w-2xl min-h-screen">
+      <body>
         <Header />
         {children}
       </body>
