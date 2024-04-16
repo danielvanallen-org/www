@@ -17,6 +17,9 @@ body {
     ul {
       @apply mb-3;
     }
+    li {
+      @apply ml-5;
+    }
     p {
       @apply mb-3;
     }
