@@ -3,7 +3,7 @@ import DarkModeButton from './dark-mode-button';
 
 export default function Header() {
     return (
-        <header className="bg-slate-400 dark:bg-slate-500 px-3 pb-3 mb-10">
+        <header className="bg-slate-400 dark:bg-slate-600 px-3 pb-3 mb-10">
             <div className="flex max-w-3xl m-auto pt-10 gap-5">
             <Link href="/">
                 <strong>Daniel Van Allen</strong>
