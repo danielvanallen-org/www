@@ -4,7 +4,7 @@ import { applyDarkMode } from './apply-dark-mode';
 
 export default function DarkModeButton() {
     return (
-        <button onClick={() => {
+        <button aria-label="toggle dark mode" title="toggle dark mode" onClick={() => {
             if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 localStorage.theme = 'light';
             } else {
