@@ -1,6 +1,7 @@
 import "./globals.css";
 
-import { applyDarkMode } from "./dark-mode";
+import { applyDarkMode } from "./apply-dark-mode";
+import Header from "./header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,7 +29,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body className="m-auto max-w-2xl min-h-screen">
+        <Header />
         {children}
       </body>
     </html>

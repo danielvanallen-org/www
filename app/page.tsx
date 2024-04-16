@@ -1,30 +1,33 @@
+import Link from "next/link";
+
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col ml-3">
-      <h1 className="mt-3">Daniel Van Allen</h1>
-      Owner, Daniel Van Allen LLC
-      <h2 className="mt-3">Contact</h2>
-      <span>
-        Email:&nbsp;
-        <a href="mailto:daniel@danielvanallen.org">daniel@danielvanallen.org</a>
-      </span>
-      <span>
-        PGP:&nbsp;
-        <a href="http://pgp.mit.edu/pks/lookup?search=0x3854878BD47CDADCE1D3D6A63AE5757AC1FD9D12">3854 878B D47C DADC E1D3 D6A6 3AE5 757A C1FD 9D12</a>
-      </span>
-      <span>
-        LinkedIn:&nbsp;
-        <a href="https://www.linkedin.com/in/danvanallen">linkedin.com/in/danvanallen</a>
-      </span>
-      <span>
-        GitHub:&nbsp;
-        <a href="https://github.com/dvanallen">github.com/dvanallen</a>
-      </span>
-      <span>
-        Resume:&nbsp;
-        <a href="/resume.pdf">danielvanallen.org/resume.pdf</a>&nbsp;
-        (<a href="/resume.docx">docx</a>)
-      </span>
-    </main>
-  );
+    return (
+        <div>
+            <main>
+                <p>
+                    I&apos;m a software engineer with ten years of experience in backend development and edge network deployments. Here you can find some of my projects and contact information.
+                </p>
+                <p>
+                    At my recent job at Google, I worked on Google Distributed Cloud Edge platform and Google Global Cache, which is the content delivery network (CDN) that hosts YouTube videos.
+                </p>
+                <p>
+                    I also worked on improving the security of the Internet by processing and displaying BGP IRR and RPKI data in the Google Peering Portal. You can find coverage of this work in the <Link href="https://dl.acm.org/doi/abs/10.1145/3469287">Communications of the ACM</Link> and <Link href="https://www.wired.com/story/bgp-routing-manrs-google-fix/">Wired</Link>.
+                </p>
+                <p>
+                    I am currently open to:
+                </p>
+                <ul className="list-disc">
+                    <li>
+                        short or long term contracting projects
+                    </li>
+                    <li>
+                        full-time opportunities
+                    </li>
+                </ul>
+                <p>
+                    If you would like to work together, please reach out using the information on my <Link href="/about">about</Link> page.
+                </p>
+            </main>
+        </div>
+    );
 }
