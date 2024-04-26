@@ -13,7 +13,7 @@ export default function Projects() {
             id: 'deepsouth',
             name: 'Deep South',
             img: 'deepsouth.png',
-            desc: 'A small (work in progress) game about my apartment in a haunted brothel in Arkansas, written in Godot Engine.'
+            desc: 'A small (work in progress) game about my haunted apartment in Arkansas, written in Godot Engine.'
         }
     ];
 
