@@ -7,10 +7,6 @@ export default function About() {
         <br />
         GitHub:&nbsp;
         <a href="https://github.com/dvanallen">github.com/dvanallen</a>
-        <br />
-        Resume:&nbsp;
-        <a href="/resume.pdf">danielvanallen.org/resume.pdf</a>&nbsp;
-        (<a href="/resume.docx">docx</a>)
       </p>
 
       <h3 className="mt-3">Contact</h3>
