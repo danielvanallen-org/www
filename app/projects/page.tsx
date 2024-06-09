@@ -7,7 +7,7 @@ export default function Projects() {
             id: 'cryptcolors',
             name: 'Crypt Colors',
             img: 'cryptcolors.svg',
-            desc: 'Learn about asymmetric public key cryptography by mixing colors of paint.'
+            desc: 'Learn about asymmetric public key cryptography by mixing colors of paint to share a secret color.'
         },
         {
             id: 'deepsouth',
@@ -19,7 +19,7 @@ export default function Projects() {
 
     return (
         <main className="max-w-4xl">
-            <div className="flex flex-wrap m-auto">
+            <div className="flex flex-wrap m-auto justify-center">
             {projects.map((project) => (
                 <Link href={`/projects/${project.id}`} key={project.id} className="m-5">
                     <div className="max-w-sm rounded overflow-hidden shadow-lg">

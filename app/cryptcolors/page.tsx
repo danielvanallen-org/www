@@ -20,6 +20,11 @@ export default function Home() {
 
   return (
     <main>
+      <h1>Crypt Colors</h1>
+      <p>
+        Explore public key cryptography by mixing paint to share a secret color!
+      </p>
+
       <h2>Setup</h2>
       <p>
         To perform the demonstration, you will need a group of three people.  Two of the people will be communicating a shared secret key by choosing colors of paint, and the third person will be attempting to guess the shared secret.

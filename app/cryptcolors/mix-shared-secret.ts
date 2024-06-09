@@ -22,9 +22,9 @@ export default function MixSharedSecret(baseColor: string, privateColor: string,
 
     for (var i = 0; i < zMix.length; i++) { // mix:
         zMix[i] = (
-            0.34 * z1[i] +       // 34% of rgb1
-            0.33 * z2[i] +       // 33% of rgb2
-            0.33 * z3[i]         // 33% of rgb3
+            0.34 * z1[i] +                  // 34% of rgb1
+            0.33 * z2[i] +                  // 33% of rgb2
+            0.33 * z3[i]                    // 33% of rgb3
         );
     }
 
