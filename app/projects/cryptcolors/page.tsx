@@ -3,9 +3,9 @@ export default function CryptColors() {
         <main>
             <div>
                 <h1>Crypt Colors</h1>
-                <p>Learn about asymmetric public key cryptography by mixing colors of paint.</p>
+                <p>Explore public key cryptography by mixing paint to share a secret color!</p>
                 <p>
-                    <a href="https://www.cryptcolors.com">cryptcolors.com</a>
+                    Try it here: <a href="https://www.cryptcolors.com">cryptcolors.com</a>.
                 </p>
                 <h2>About</h2>
                 <p>
