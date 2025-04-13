@@ -5,4 +5,4 @@ The production version of this website is located at [danielvanallen.org](https:
 A devcontainer configuration is provided for VS Code development.
 
 ## Deployment
-GitHub Actions are configured to deploy the site to AWS ECS running on Fargate on each push to the `main` branch.
+This site is deployed from this GitHub repository using Google Cloud Run.
