@@ -10,7 +10,7 @@ export default function Home() {
                 </p>
                 <p>
                     Currently I&apos;m leading the backend Platform team at <a href="https://cape.co">Cape</a>, where we&apos;re building a resilient, private, and secure cellular network.
-                    We're hiring!
+                    We&apos;re hiring!
                 </p>
                 <p>
                     Before that, I spent five years at Google, where I worked on the <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/overview">Google Distributed Cloud Connected</a> platform and <a href="https://peering.google.com">Google Global Cache</a>, which is the content delivery network (CDN) that hosts YouTube videos.
