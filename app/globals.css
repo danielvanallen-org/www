@@ -12,7 +12,8 @@
     overflow-x: hidden;
     main {
       @apply mx-auto flex-col max-w-3xl mt-7 px-3;
-      p a {
+      p a,
+      ul a {
         @apply text-link visited:text-link-visited underline;
         @apply dark:text-blue-300 dark:visited:text-purple-400;
       }
