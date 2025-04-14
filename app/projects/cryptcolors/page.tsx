@@ -5,7 +5,7 @@ export default function CryptColors() {
                 <h1>Crypt Colors</h1>
                 <p>Explore public key cryptography by mixing paint to share a secret color!</p>
                 <p>
-                    Try it here: <a href="https://www.cryptcolors.com">cryptcolors.com</a>.
+                    Try it here: <a href="/cryptcolors">danielvanallen.org/cryptcolors</a>.
                 </p>
                 <h2>About</h2>
                 <p>
