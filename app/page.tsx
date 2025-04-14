@@ -9,7 +9,7 @@ export default function Home() {
                     Here you can find some of my <Link href="/projects">projects</Link> and <Link href="about">contact</Link> information.
                 </p>
                 <p>
-                    Currently I'm leading the backend Platform team at <a href="https://cape.co">Cape</a>, where we're building a resilient, private, and secure cellular network.
+                    Currently I&apos;m leading the backend Platform team at <a href="https://cape.co">Cape</a>, where we&apos;re building a resilient, private, and secure cellular network.
                     We're hiring!
                 </p>
                 <p>
