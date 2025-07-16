@@ -10,6 +10,9 @@ export default function About() {
         <br />
         This site:&nbsp;
         <a href="https://github.com/danielvanallen-org/www">github.com/danielvanallen-org/www</a>
+        <br />
+        Resume:&nbsp;
+        <a href="/resume.pdf">danielvanallen.org/resume.pdf</a>
       </p>
 
       <h3 className="mt-3">Contact</h3>
