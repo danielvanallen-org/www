@@ -15,7 +15,7 @@ export default function Home() {
   const baseColor = "#2190bc";
   const [privateColor, setPrivateColor] = useState<string>(colorChoices[0]);
   const publicColor = colord(mixbox.lerp(privateColor, baseColor, 0.5).toString()).toHex()
-  const [otherPublicColor, setOtherPublicColor] = useState<string>("000000");
+  const [otherPublicColor, setOtherPublicColor] = useState<string>("");
   const sharedSecretColor = MixSharedSecret(baseColor, privateColor, otherPublicColor, colorChoices);
 
   return (
@@ -85,7 +85,7 @@ export default function Home() {
       <p>
         Ask your partner for the six-digit code representing their public color, and type it here:
       </p>
-      <input type="text" value={otherPublicColor} className="mb-3 block" placeholder="1a2b3c" onInput={(e) => (setOtherPublicColor(e.currentTarget.value))} />
+      <input type="text" value={otherPublicColor} className="bg-white mb-3 block" placeholder="14d347" onInput={(e) => (setOtherPublicColor(e.currentTarget.value))} />
 
       <strong>Shared Secret Color: {sharedSecretColor}</strong>
       <ColorSwatch color={sharedSecretColor} />
