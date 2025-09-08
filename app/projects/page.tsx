@@ -22,7 +22,7 @@ export default function Projects() {
             <div className="flex flex-wrap m-auto justify-center">
             {projects.map((project) => (
                 <Link href={`/projects/${project.id}`} key={project.id} className="m-5">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div className="max-w-sm rounded-sm overflow-hidden shadow-lg">
                         <div className="bg-white dark:bg-gray-900">
                             <Image src={`/${project.img}`} alt={project.name} width={400} height={250} className="w-full" />
                             <div className="px-6 py-4">
