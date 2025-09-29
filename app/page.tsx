@@ -9,9 +9,6 @@ export default function Home() {
                     Here you can find some of my <Link href="/projects">projects</Link> and <Link href="about">contact</Link> information.
                 </p>
                 <p>
-                    I&apos;m currently available for hire for short or long-term contracting gigs or full-time opportunities.  Please <Link href="about">contact me</Link> if you&apos;d like to work together!
-                </p>
-                <p>
                     Most recently, I was the engineering manager and tech lead for the backend Platform team at <a href="https://cape.co">Cape</a>.  Cape is a Mobile Virtual Network Operator (MVNO) building a cellular network that doesn&apos;t collect or sell any of your personal information.  They also use identifier rotation to help obfuscate their users while making use of partner cell towers.
                 </p>
                 <p>
