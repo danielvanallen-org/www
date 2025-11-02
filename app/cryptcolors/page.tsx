@@ -2,7 +2,7 @@
 
 import CryptColorPicker from "./color-picker";
 import { useState } from "react";
-// @ts-ignore
+// @ts-expect-error Mixbox does not supply types.
 import { default as mixbox } from "mixbox";
 import { colord } from "colord";
 import ColorSwatch from "./color-swatch";
