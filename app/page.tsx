@@ -5,7 +5,7 @@ export default function Home() {
         <main>
             <div>
                 <p>
-                    Hello, my name is Daniel and I&apos;m a software engineer with 10+ years of experience in backend development and edge network deployments.
+                    Hello, my name is Daniel, and I&apos;m a software engineer with 10+ years of experience in backend development and edge network deployments.
                     Here you can find some of my <Link href="/projects">projects</Link> and <Link href="about">contact</Link> information.
                 </p>
                 <p>

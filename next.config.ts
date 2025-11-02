@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
             value: '(www\\.)?cryptcolors\\.com',
           },
         ],
-        destination: 'https://danielvanallen.org/cryptcolors',
+        destination: 'https://www.danielvanallen.org/cryptcolors',
         permanent: false,
       },
     ]
