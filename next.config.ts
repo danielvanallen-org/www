@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   output: "standalone",
   reactCompiler: true,
 
+  // Save some money by doing this redirect with NextJS instead of using a load balancer.
   async redirects() {
     return [
       {
@@ -15,7 +16,7 @@ const nextConfig: NextConfig = {
             value: '(www\\.)?cryptcolors\\.com',
           },
         ],
-        destination: '/cryptcolors',
+        destination: 'https://danielvanallen.org/cryptcolors',
         permanent: false,
       },
     ]
