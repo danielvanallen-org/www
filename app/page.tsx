@@ -5,14 +5,17 @@ export default function Home() {
         <main>
             <div>
                 <p>
-                    I&apos;m a software engineer with 10+ years of experience in backend development and edge network deployments.
+                    Hello, my name is Daniel and I&apos;m a software engineer with 10+ years of experience in backend development and edge network deployments.
                     Here you can find some of my <Link href="/projects">projects</Link> and <Link href="about">contact</Link> information.
+                </p>
+                <p>
+                    Currently, I'm an SRE at Netflix supporting the <Link href="https://openconnect.netflix.com">Open Connect</Link> content delivery network (CDN).
                 </p>
                 <p>
                     Most recently, I was the engineering manager and tech lead for the backend Platform team at <Link href="https://cape.co">Cape</Link>.  Cape is a Mobile Virtual Network Operator (MVNO) building a cellular network that doesn&apos;t collect or sell any of your personal information.  They also use identifier rotation to help obfuscate their users while making use of partner cell towers.
                 </p>
                 <p>
-                    Before Cape, I spent five years at Google, where I worked on the <Link href="https://cloud.google.com/distributed-cloud/edge/latest/docs/overview">Google Distributed Cloud connected</Link> platform and <Link href="https://peering.google.com">Google Global Cache</Link>, which is the content delivery network (CDN) that hosts YouTube videos.
+                    Before Cape, I spent five years at Google, where I worked on the <Link href="https://cloud.google.com/distributed-cloud/edge/latest/docs/overview">Google Distributed Cloud connected</Link> platform and <Link href="https://peering.google.com">Google Global Cache</Link>, which is the CDN for YouTube videos.
                 </p>
                 <p>
                     I also worked on improving the security of the Internet by processing and displaying BGP IRR and RPKI data in the Google Peering Portal.
