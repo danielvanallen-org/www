@@ -12,7 +12,7 @@ export default function Home() {
                     Currently, I'm an SRE at Netflix supporting the <Link href="https://openconnect.netflix.com">Open Connect</Link> content delivery network (CDN).
                 </p>
                 <p>
-                    Most recently, I was the engineering manager and tech lead for the backend Platform team at <Link href="https://cape.co">Cape</Link>.  Cape is a Mobile Virtual Network Operator (MVNO) building a cellular network that doesn&apos;t collect or sell any of your personal information.  They also use identifier rotation to help obfuscate their users while making use of partner cell towers.
+                    Previously, I was the engineering manager and tech lead for the backend Platform team at <Link href="https://cape.co">Cape</Link>.  Cape is a Mobile Virtual Network Operator (MVNO) building a cellular network that doesn&apos;t collect or sell any of your personal information.  They also use identifier rotation to help obfuscate their users while making use of partner cell towers.
                 </p>
                 <p>
                     Before Cape, I spent five years at Google, where I worked on the <Link href="https://cloud.google.com/distributed-cloud/edge/latest/docs/overview">Google Distributed Cloud connected</Link> platform and <Link href="https://peering.google.com">Google Global Cache</Link>, which is the CDN for YouTube videos.
