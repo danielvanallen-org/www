@@ -5,13 +5,17 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node",
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/anthropics/devcontainer-features/claude-code:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		3000
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 	"postCreateCommand": "npm install",
 	// Configure tool-specific properties.
 	"customizations": {
@@ -21,6 +25,9 @@
 			]
 		}
 	},
+	"mounts": [
+		"source=${localEnv:HOME}/.claude,target=/home/node/.claude,type=bind,consistency=cached"
+	],
 	"containerEnv": {
 		"NEXT_TELEMETRY_DISABLED": "1"
 	},
