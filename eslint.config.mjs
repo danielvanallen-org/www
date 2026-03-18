@@ -7,6 +7,7 @@ export default [
   ...tseslint.configs.recommended,
   next.configs["core-web-vitals"],
   {
+    name: "danielvanallen/ignores",
     ignores: [
       "node_modules/**",
       ".next/**",
