@@ -5,7 +5,14 @@ export default function CryptColors() {
                 <h1>Crypt Colors</h1>
                 <p>Explore public key cryptography by mixing paint to share a secret color!</p>
                 <p>
-                    Try it here: <a href="/cryptcolors">danielvanallen.org/cryptcolors</a>.
+                    Try it here: <a href="https://cryptcolors.com">cryptcolors.com</a>.
+                </p>
+                <h2>Setup</h2>
+                <p>
+                    To perform the demonstration, you will need a group of three people.  Two of the people will be communicating a shared secret key by choosing colors of paint, and the third person will be attempting to guess the shared secret.
+                </p>
+                <p>
+                    If you don&apos;t have two other people around, you can also just try the demonstration for yourself to see how it works.
                 </p>
                 <h2>About</h2>
                 <p>
