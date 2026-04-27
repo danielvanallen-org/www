@@ -11,6 +11,25 @@
 
   --color-link: #0000ee;
   --color-link-visited: #551a8b;
+
+  --animate-fade-in: fade-in 200ms ease-out;
+  --animate-firework: firework 500ms ease-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes firework {
+  0% {
+    transform: rotate(var(--angle, 0deg)) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(var(--angle, 0deg)) translateX(28px);
+    opacity: 0;
+  }
 }
 
 /*
@@ -39,7 +58,7 @@
     width: 100vw;
     overflow-x: hidden;
     main {
-      @apply mx-auto flex-col max-w-3xl mt-7 px-3;
+      @apply mx-auto flex-col max-w-3xl mt-7 mb-12 px-3;
       p a,
       ul a {
         @apply text-link visited:text-link-visited underline;
