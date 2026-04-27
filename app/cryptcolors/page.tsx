@@ -8,11 +8,13 @@ import { colord } from "colord";
 import ColorSwatch from "./color-swatch";
 import MixSharedSecret, { validateOtherPublicColor } from "./mix-shared-secret";
 import { colorChoices } from "./constants";
+import { BASE_COLOR } from "./mixing-config.ts";
+import FireworkBurst from "./firework-burst";
 
 
 export default function Home() {
 
-  const baseColor = "#2190bc";
+  const baseColor = BASE_COLOR;
   const [privateColor, setPrivateColor] = useState<string>(colorChoices[0]);
   const publicColor = colord(mixbox.lerp(privateColor, baseColor, 0.5).toString()).toHex()
   const [otherPublicColor, setOtherPublicColor] = useState<string>("");
@@ -108,7 +110,7 @@ export default function Home() {
         <span className="pl-4 py-3 select-none text-gray-900">
           <span className="relative inline-block">
             #
-            {fireworkKey > 0 && <FireworkBurst key={fireworkKey} />}
+            {fireworkKey > 0 && <FireworkBurst key={fireworkKey} rainbow size="sm" seed={fireworkKey} />}
           </span>
         </span>
         <input
@@ -190,24 +192,6 @@ export default function Home() {
       </p>
 
     </main >
-  );
-}
-
-function FireworkBurst() {
-  const colors = ["#fbbf24", "#f472b6", "#22d3ee", "#a3e635", "#fb923c", "#a78bfa", "#60a5fa", "#fb7185"];
-  return (
-    <span className="absolute inset-0 pointer-events-none flex items-center justify-center">
-      {colors.map((color, i) => (
-        <span
-          key={i}
-          className="absolute w-1.5 h-1.5 rounded-full animate-firework"
-          style={{
-            backgroundColor: color,
-            ["--angle" as string]: `${(360 / colors.length) * i}deg`,
-          } as React.CSSProperties}
-        />
-      ))}
-    </span>
   );
 }
 

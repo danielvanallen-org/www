@@ -1,6 +1,7 @@
 // @ts-expect-error Mixbox does not supply types.
 import { default as mixbox } from "mixbox";
-import { unmix } from "./constants";
+import { unmix } from "./constants.ts";
+import { W_BASE, W_LOW, W_HIGH } from "./mixing-config.ts";
 import { colord } from "colord";
 
 export type ValidationResult = { kind: "prompt" | "progress" | "error"; message: string } | null;
@@ -36,17 +37,24 @@ export default function MixSharedSecret(baseColor: string, privateColor: string,
     }
     const otherPrivateColor = colorChoices[ci];
 
+    /* Sort the two private colors by hex string so both partners pick the same
+       (low, high) ordering, then apply asymmetric weights. The asymmetry breaks
+       the additive A+B collisions that limit equal-weight mixes. */
+    const [lowPrivate, highPrivate] = privateColor < otherPrivateColor
+        ? [privateColor, otherPrivateColor]
+        : [otherPrivateColor, privateColor];
+
     const z1 = mixbox.rgbToLatent(baseColor);
-    const z2 = mixbox.rgbToLatent(privateColor);
-    const z3 = mixbox.rgbToLatent(otherPrivateColor);
+    const z2 = mixbox.rgbToLatent(lowPrivate);
+    const z3 = mixbox.rgbToLatent(highPrivate);
 
     const zMix = new Array(mixbox.LATENT_SIZE);
 
-    for (let i = 0; i < zMix.length; i++) { // mix:
+    for (let i = 0; i < zMix.length; i++) {
         zMix[i] = (
-            0.34 * z1[i] +                  // 34% of rgb1
-            0.33 * z2[i] +                  // 33% of rgb2
-            0.33 * z3[i]                    // 33% of rgb3
+            W_BASE * z1[i] +
+            W_LOW * z2[i] +
+            W_HIGH * z3[i]
         );
     }
 

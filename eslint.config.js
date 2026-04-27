@@ -16,4 +16,14 @@ export default [
       "next-env.d.ts",
     ],
   },
+  {
+    name: "danielvanallen/node-scripts-and-tests",
+    files: ["utils/**/*.ts", "tests/**/*.ts"],
+    languageOptions: {
+      globals: {
+        process: "readonly",
+        console: "readonly",
+      },
+    },
+  },
 ];
