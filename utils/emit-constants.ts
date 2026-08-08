@@ -34,7 +34,7 @@ for (let r = 0; r < 256; r += STEP)
 
 const selected: Candidate[] = [];
 const selectedSecrets = new Set<string>();
-const z = new Array(LATENT_SIZE);
+const z = Array.from({ length: LATENT_SIZE });
 for (const cand of candidates) {
   let ok = true;
   const newSecrets: string[] = [];
