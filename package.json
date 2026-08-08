@@ -16,21 +16,21 @@
     "colord": "^2.9.3",
     "mixbox": "^2.0.0",
     "next": "^16.3.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "sharp": "^0.35.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.2",
-    "@types/node": "^26.1.0",
-    "@types/react": "19.2.17",
-    "@types/react-dom": "19.2.3",
-    "autoprefixer": "^10.5.2",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.1.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "autoprefixer": "^10.5.4",
     "babel-plugin-react-compiler": "^1.0.0",
     "oxlint": "^1.77.0",
     "oxlint-tsgolint": "^7.0.2001",
-    "postcss": "^8.5.23",
+    "postcss": "^8.5.25",
     "tailwindcss": "^4.1.12",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   }
 }
