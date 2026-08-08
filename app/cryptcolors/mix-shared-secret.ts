@@ -48,7 +48,7 @@ export default function MixSharedSecret(baseColor: string, privateColor: string,
     const z2 = mixbox.rgbToLatent(lowPrivate);
     const z3 = mixbox.rgbToLatent(highPrivate);
 
-    const zMix = new Array(mixbox.LATENT_SIZE);
+    const zMix = Array.from({ length: mixbox.LATENT_SIZE });
 
     for (let i = 0; i < zMix.length; i++) {
         zMix[i] = (

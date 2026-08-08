@@ -56,7 +56,7 @@ console.log(`\nGreedy-selecting for pairwise secret uniqueness...`);
 const t1 = Date.now();
 const selected: Candidate[] = [];
 const selectedSecrets = new Set<string>();
-const z = new Array(LATENT_SIZE);
+const z = Array.from({ length: LATENT_SIZE });
 
 let progress = 0;
 let lastReport = Date.now();

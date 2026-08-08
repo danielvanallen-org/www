@@ -84,16 +84,23 @@ export default function Home() {
         <div className="text-center">Mixing with Base Color: {baseColor}</div>
       </div>
       <div className="mb-6">
-        <div onClick={copyPublicColor} className="cursor-pointer" title="Click to copy">
+        <button
+          type="button"
+          onClick={copyPublicColor}
+          aria-label={`Copy public color ${publicColor}`}
+          title="Click to copy"
+          className="block w-full cursor-pointer"
+        >
           <ColorSwatch color={publicColor} />
-        </div>
-        <div className="text-center text-3xl mt-2">
-          <strong>Your Public Color: {publicColor}</strong>
-          <button onClick={copyPublicColor} aria-label="Copy public color" title="Click to copy" className="ml-2 cursor-pointer align-top">
-            <ClipboardIcon />
-          </button>
-          {copied && <span className="ml-2 text-green-600 animate-fade-in">Copied!</span>}
-        </div>
+          <span className="block text-center text-3xl mt-2">
+            <strong>Your Public Color: {publicColor}</strong>
+            <span className="ml-2 inline-block align-top"><ClipboardIcon /></span>
+            {/* Always rendered so the announcement fires when it gains content. */}
+            <output>
+              {copied && <span className="ml-2 text-green-600 animate-fade-in">Copied!</span>}
+            </output>
+          </span>
+        </button>
       </div>
 
       <p>
