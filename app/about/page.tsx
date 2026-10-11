@@ -18,7 +18,7 @@ export default function About() {
         <a href="mailto:daniel@danielvanallen.org">daniel@danielvanallen.org</a>
         <br />
         Personal:&nbsp;
-        <a href="mailto:danvanallen@gmail.com">danvanallen@gmail.com</a>
+        <a href="mailto:daniel@danielvanallen.com">daniel@danielvanallen.com</a>
         <br />
         PGP:&nbsp;
         <a className="external" href="http://pgp.mit.edu/pks/lookup?search=0x3854878BD47CDADCE1D3D6A63AE5757AC1FD9D12">3854 878B D47C DADC E1D3 D6A6 3AE5 757A C1FD 9D12</a>
