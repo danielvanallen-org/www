@@ -7,7 +7,10 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Daniel Van Allen",
   description: "Daniel Van Allen contact information and projects.",
-  metadataBase: new URL("https://danielvanallen.org"),
+  metadataBase: new URL("https://www.danielvanallen.com"),
+  alternates: {
+    canonical: "./",
+  },
 };
 
 // Applying dark mode with next/script beforeInteractive causes a flash.
