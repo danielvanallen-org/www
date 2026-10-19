@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Contact information, PGP key, LinkedIn and GitHub for Daniel Van Allen.",
+};
+
 export default function About() {
   return (
     <main className="flex-col">

@@ -1,4 +1,9 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    description: "Software, network and systems engineer building backend infrastructure and edge networks. Projects and contact information.",
+};
 
 export default function Home() {
     return (

@@ -1,5 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Projects',
+    description: 'Projects by Daniel Van Allen, including Crypt Colors and Deep South.',
+};
 
 export default function Projects() {
     const projects = [

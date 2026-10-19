@@ -5,7 +5,10 @@ import Header from "./header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Daniel Van Allen",
+  title: {
+    default: "Daniel Van Allen",
+    template: "%s | Daniel Van Allen",
+  },
   description: "Daniel Van Allen contact information and projects.",
   metadataBase: new URL("https://www.danielvanallen.com"),
   alternates: {
