@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Crypt Colors",
+    description: "How Crypt Colors teaches public key cryptography by mixing paint colors to share a secret, and how the paint mixing works.",
+};
+
 export default function CryptColors() {
     return (
         <main>
